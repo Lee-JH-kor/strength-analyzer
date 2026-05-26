@@ -48,7 +48,7 @@ def analyze_data(system_prompt, user_prompt, api_key):
     try:
 # 가장 추론 능력이 뛰어난 gemini-1.5-pro 모델 설정 및 시스템 프롬프트 부여
         model = genai.GenerativeModel(
-            model_name="gemini-3.1-pro-preview", # <- 여기를 변경하세요.
+            model_name="gemini-3.5-flash", # <- 여기를 변경하세요.
             system_instruction=system_prompt
         )
         
